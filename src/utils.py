@@ -5,13 +5,13 @@ import os
 import re
 import string
 import nltk
-# nltk.download('punkt')
-# nltk.download('wordnet')
-# nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 import spacy
 # spacy.cli.download("en_core_web_lg")
-#nlp = spacy.load('en_core_web_lg')
+nlp = spacy.load('en_core_web_lg')
 from keras.preprocessing.text import Tokenizer
 tokenizer = Tokenizer()
 puncs = string.punctuation
