@@ -10,7 +10,7 @@ nltk.download('wordnet')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 import spacy
-# spacy.cli.download("en_core_web_lg")
+spacy.cli.download("en_core_web_lg")
 nlp = spacy.load('en_core_web_lg')
 from keras.preprocessing.text import Tokenizer
 tokenizer = Tokenizer()
