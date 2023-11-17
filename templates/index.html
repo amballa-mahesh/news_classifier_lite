@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    input[type=text], select {
+      width: 8%;
+      padding: 5px 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 10%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size = 20px;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }   
+    </style>
+  <body>
+<h2>News Classifier</h2>
+
+
+
+<form action="/submit" method = 'post'>
+    <label for="entered_text">Please enter your article -- </label><tr>
+    <input type= 'text' id = "entered_text" name= "entered_text"><br><br>
+    <input type="submit" value="Classify">    
+</form>
+
+<h3 style = color:blue;>This article is classified as - {{result}}</h3> 
+
+
+
+</body>
+</html>
